@@ -1,0 +1,278 @@
+﻿html,body{
+    height : 100%;
+}
+
+body {
+    font-size: 2em;
+    font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
+    color: #232323;
+}
+
+.pdlph-header-container{
+    background-color : #a2d424;
+    width : 100%;
+    height : 8%;
+    min-height : 60px;
+    box-shadow : 0 0 6px 0 black;
+    color : white;
+    font-size : xx-large;
+    word-wrap : break-word;
+    position : fixed;
+    z-index : 1000;
+}
+
+.pdlph-header-title{
+    padding-top : 5px;
+    padding-bottom : 5px;
+}
+
+.pdlph-body-container{
+    box-shadow : 0 0 5px 0px gray;
+}
+
+.pdlph-left-pane{
+    min-height : 100vh;
+    background-color : white;
+    padding-top : 100px;
+    padding-left : 15px;
+    padding-right : 30px;
+    position : relative;
+}
+
+.pdlph-right-pane{
+    min-height : 100vh;
+    background-color : white;
+    border-left : 1px solid gray;
+    padding-top : 100px;
+    padding-left : 30px;
+}
+
+
+.pdlph-content-container{
+    height : 400px;
+}
+
+.pdlph-slide{
+    min-width : 600px;
+    min-height : 150px;
+    display : none;
+    padding : 10px 10px;
+    box-shadow : 0 0 4px 0 gray;
+    position : relative;
+}
+
+.pdlph-slide.active{
+    display : block;
+}
+
+/*Slide 1*/
+.pdlph-prescriptions-contianer{
+    border-right : 1px solid gray;
+    
+}
+
+.pdlph-prescriptions{
+    height : 35vw;
+    overflow-y : auto;
+    padding-right : 10px;
+}
+
+.pdlph-prescription-details{
+    height : 40vw;
+    overflow-y : auto;
+}
+.pdlph-prescription{
+    height : 40px;
+    border-bottom : 1px solid gray;
+    margin-bottom : 10px;
+    cursor : pointer;
+    padding : 5px;
+    font-size : medium;
+}
+
+
+/*Slide 2*/
+
+.pdlph-appointments-container{
+    border-right : 1px solid gray;
+}
+
+.pdlph-appointments{
+    height : 35vw;
+    overflow-y : auto;
+    padding-right : 10px;
+}
+
+.pdlph-appointment{
+    height : 40px;
+    border-bottom : 1px solid gray;
+    margin-bottom : 10px;
+    cursor : pointer;
+    padding : 5px;
+    font-size : medium;
+}
+
+.pdlph-add{
+
+    color : #a2d424;
+    font-size : 28pt;
+}
+
+.pdlph-appointment-details{
+    margin : 0 auto;
+    width : 40vw;
+    margin-top : 2vw;
+    padding-left : 2vw;
+    padding-right : 2vw;
+    padding-top : 1vw;
+    box-shadow : 0 0 6px 0 gray;
+    overflow : hidden;
+}
+
+/*Bootstrap Customization*/
+
+.list-group-item{
+    border : 0;
+    margin-bottom : 20px;
+    margin-top : 20px;
+    cursor : pointer;
+    font-weight : 500;
+    position : relative;
+    overflow : hidden;
+    border-radius : 0;
+    text-align : center;
+    user-select: none;
+}
+
+.list-group-item.active{
+    color : #a2d424;
+    background-color : inherit;
+}
+
+.list-group-item.active:hover{
+    color : #a2d424;
+    background-color : inherit;
+}
+
+li a, li a:hover,li a:active{
+    width : 100%;
+    text-decoration : none;
+    color : inherit;
+}
+
+.ink{
+    width : 200px;
+    height : 200px;
+    border-radius : 100%;
+    background-color : rgba(162, 212, 36, 0.6);
+    position : absolute;
+    top:0;
+    left:0;
+    transform : scale(0);
+}
+
+.ink.animate{
+    animation : ripple 0.65s linear;
+}
+
+@keyframes ripple{
+    100%{opacity:0;transform:scale(2.5);}
+}
+
+.form-control{
+    border-radius : 0;
+
+}
+
+.form-control:focus{
+    box-shadow : none;
+    border : 1px solid #a2d424;
+}
+
+.btn-primary:active:hover,
+.btn-primary.active:hover,
+.open > .dropdown-toggle.btn-primary:hover,
+.btn-primary:active:focus,
+.btn-primary.active:focus,
+.open > .dropdown-toggle.btn-primary:focus,
+.btn-primary:active.focus,
+.btn-primary.active.focus,
+.open > .dropdown-toggle.btn-primary.focus {
+
+    background-color : #a2d424;
+}
+
+.table{
+    font-size : medium;
+}
+
+.table td{
+    font-size : small;
+}
+
+.btn{
+    font-size : large;
+    border-radius : 0;
+    background-color : #a2d424;
+    border : 0;
+    color : black;
+}
+
+.btn:hover{   
+    border-radius : 0;
+    background-color : #88ba0b;
+    border : 0;
+    color : white;
+    box-shadow : 0 0 15px 0 gray;
+}
+
+.btn.active, .btn:active {
+    background-color : #88ba0b;
+}
+
+.pdlph-nav-item{
+    position : relative;
+}
+
+
+
+.pdlph-chat-container{
+    height : 35vw;
+    background-color : rgba(162, 212, 36, 0.4);
+    position : relative;
+    padding : 0;
+    box-shadow : 0 0 4px 0 gray;
+}
+
+.pdlph-chat-textbox-container{
+    position : absolute;
+    bottom : 0;
+    left : 0;
+    width : 100%;
+    height : 5vw;
+    background-color : white;
+}
+
+
+
+
+/*Scroll */
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: #a2d424;
+}
+
+
+
